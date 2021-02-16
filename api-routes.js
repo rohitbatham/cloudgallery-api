@@ -8,15 +8,13 @@ import SendOTPController from "./controllers/user/send-otp.js";
 //import ValidateOTPController from "./controllers/user/validate-otp.js"
 import ResetPasswordController from "./controllers/user/reset-password.js"
 
-import UpdateProfileController from "./controllers/restaurant/update-profile.js";
+import UpdateProfileController from "./controllers/user/update-profile.js";
 import UpdatePasswordController from "./controllers/user/change-password.js"
 
 // Gallery services
-import UploadImageController from "./controllers/restaurant/upload-menu-image.js";
-import GalleryController from "./controllers/restaurant/get-menu-images.js";
-import DeleteImageController from "./controllers/restaurant/delete-menu-image.js";
-import GetPrimaryImagesController from "./controllers/restaurant/get-restaurant-primary-img.js"
-import MakeImagePrimaryController from "./controllers/restaurant/make-image-primary.js"
+import UploadImageController from "./controllers/gallery/upload-menu-image.js";
+import GalleryController from "./controllers/gallery/get-menu-images.js";
+import DeleteImageController from "./controllers/gallery/delete-menu-image.js";
 
 
 export default function(app){
@@ -49,12 +47,6 @@ export default function(app){
     });
     app.delete('/api/v1/gallery/delete', AuthToken, (req, res) => {
         DeleteImageController(req, res);
-    });
-    app.get('/api/v1/gallery/primary', AuthToken, (req, res) => {
-        GetPrimaryImagesController(req, res);
-    });
-    app.patch('/api/v1/gallery/makeprimary', AuthToken, (req, res) => {
-        MakeImagePrimaryController(req, res);
     });
 }
 
