@@ -1,1 +1,1 @@
-# MyMenus API
+# Cloud Gallery API
