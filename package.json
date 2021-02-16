@@ -1,0 +1,39 @@
+{
+  "name": "cloudgallery-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node --experimental-modules app.mjs",
+    "stage": "cross-env NODE_ENV=stage node --experimental-modules app.mjs",
+    "prod": "cross-env NODE_ENV=prod node --experimental-modules app.mjs",
+    "start": "cross-env NODE_ENV=dev node --experimental-modules app.mjs"
+  },
+  "author": "Apyl",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/rohitbatham/cloudgallery/web.git"
+  },
+  "dependencies": {
+    "add-subtract-date": "^1.0.15",
+    "aws-sdk": "^2.795.0",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.11",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "sendmail": "^1.6.1"
+  }
+}

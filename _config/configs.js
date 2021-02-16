@@ -1,0 +1,1 @@
+export const AppEndpoint = process.env.AppEndpoint;
