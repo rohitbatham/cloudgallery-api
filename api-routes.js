@@ -12,9 +12,9 @@ import UpdateProfileController from "./controllers/user/update-profile.js";
 import UpdatePasswordController from "./controllers/user/change-password.js"
 
 // Gallery services
-import UploadImageController from "./controllers/gallery/upload-menu-image.js";
-import GalleryController from "./controllers/gallery/get-menu-images.js";
-import DeleteImageController from "./controllers/gallery/delete-menu-image.js";
+import UploadImageController from "./controllers/gallery/upload-image.js";
+import GalleryController from "./controllers/gallery/get-images.js";
+import DeleteImageController from "./controllers/gallery/delete-image.js";
 
 
 export default function(app){

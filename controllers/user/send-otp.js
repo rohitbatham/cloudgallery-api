@@ -4,7 +4,7 @@ import { sendResetOTP } from "../../_helpers/mailer.js";
 export default function(req,res){
     var email = req.body.email;
     const { otpType }  = req.query;
-    const sqlQuery = `SELECT email, usertype FROM users WHERE email = '${email}'`;
+    const sqlQuery = `SELECT email FROM users WHERE email = '${email}'`;
     connection.query(sqlQuery, function (error, results, fields) {
       if (error) {
         console.log(error);

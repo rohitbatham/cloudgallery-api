@@ -7,7 +7,9 @@ export default async (base64, uuid) => {
   
     // Configure AWS to use promise
     AWS.config.setPromisesDependency(Bluebird);
-    AWS.config.update({ accessKeyId: ACCESS_KEY_ID, secretAccessKey: SECRET_ACCESS_KEY, region: AWS_REGION });
+    const confiParams = { accessKeyId: ACCESS_KEY_ID, secretAccessKey: SECRET_ACCESS_KEY, region: AWS_REGION };
+    console.log(confiParams);
+    AWS.config.update(confiParams);
 
   
     // Create an s3 instance
@@ -23,7 +25,7 @@ export default async (base64, uuid) => {
     // Generally we'd have an userId associated with the image
     // For this example, we'll simulate one
     const userId = new Date().getTime();
-    const path = `restaurant-menus/${uuid}/${userId}.${type}`;
+    const path = `photos/${uuid}/${userId}.${type}`;
     // With this setup, each time your user uploads an image, will be overwritten.
     // To prevent this, use a different Key each time.
     // This won't be needed if they're uploading their avatar, hence the filename, userAvatar.js.
@@ -45,12 +47,12 @@ export default async (base64, uuid) => {
       location = Location;
       key = Key;
     } catch (error) {
-       // console.log(error)
+       console.log(error)
     }
     
     // Save the Location (url) to your database and Key if needs be.
     // As good developers, we should return the url and let other function do the saving to database etc
-    //console.log(location, key);
+    console.log(location, key, path);
     
     return { path };
     

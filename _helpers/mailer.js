@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
 import VerifyEmailTemplate from "./../_templates/verify-account.js";
 import { AppEndpoint } from "./../_config/configs.js"
-import tableBooking from "../_templates/table-booking.js";
 import LoginWithOTP from "../_templates/otp-login.js";
 import ResetPwdWOTP from "../_templates/reset-pwd.js";
 import ResetNotification from "../_templates/reset-notification.js";
@@ -23,24 +22,6 @@ export async function sendVerifcationMail(host, email, key){
         to : email,
         subject : "Please confirm your email account",
         html : VerifyEmailTemplate(link)
-    }
-    try {
-        const sentStatus = await transporter.sendMail(mailOptions);
-        return sentStatus;
-    } catch {
-        return false;
-    }
-}
-
-
-// send mail
-export async function sendTableBookingMail(email, restaurantName, tableNumber, tableType, customerName, customerPhone){
-    var mailOptions;
-    mailOptions={
-        from: '"Cloudgallery.io" <no-reply@cloudgallery.io>',
-        to : email,
-        subject : `Table booked by ${customerName}`,
-        html : tableBooking(restaurantName, tableNumber, tableType, customerName, customerPhone)
     }
     try {
         const sentStatus = await transporter.sendMail(mailOptions);

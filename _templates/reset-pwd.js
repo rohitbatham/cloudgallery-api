@@ -25,7 +25,7 @@ export default function(AppEndpoint, otp, username = "User"){
                 </tr>
                 <tr>
                     <td valign="top" align="left" style="padding-bottom:18px;padding-left:15px; font-size:32; font-weight:bold;">
-                            <img src="https://mymenus3bucket.s3.us-east-2.amazonaws.com/mailerimages/logoicon.png" style="width: 90px; display: block; margin: 10px auto;" />
+                            <img src="https://cloudgallery.s3.ap-south-1.amazonaws.com/mailerimages/logoicon.png" style="width: 90px; display: block; margin: 10px auto;" />
                     </td>
                 </tr>
             </tbody></table>
@@ -54,7 +54,7 @@ export default function(AppEndpoint, otp, username = "User"){
                         </tr>
                         <tr>
                             <td valign="top" style="font:normal 16px arial;line-height:21px;color:#51505d;text-align:left;padding-bottom:27px">
-                                You can use the below One Time Password (<span class="il">OTP</span>) to reset your password on <a href="${AppEndpoint}" target="_blank" style="outline:none;text-decoration:none;color:#51505d" target="_blank">Mymenu.io</a>
+                                You can use the below One Time Password (<span class="il">OTP</span>) to reset your password on <a href="${AppEndpoint}" target="_blank" style="outline:none;text-decoration:none;color:#51505d" target="_blank">Cloudgallery.io</a>
                             </td>
                         </tr>
                         <tr>
@@ -81,7 +81,7 @@ export default function(AppEndpoint, otp, username = "User"){
                         <tr>
                             <td valign="top" style="font:normal 14px arial;line-height:20px;color:#95959d;text-align:left;padding-top:30px;padding-bottom:25px">
                                 Team,<br/>
-                                Mymenu
+                                Cloud Gallery
                             </td>
                         </tr>
                         
@@ -93,8 +93,8 @@ export default function(AppEndpoint, otp, username = "User"){
             <table>
                 <tr>
                     <td valign="top" style="font:normal 12px arial;line-height:20px;color:#95959d;text-align:center;padding-bottom:15px;">
-                        <p>© All rights reserved. My Menu <br />
-                            You are receiving this email because you signed up for My Menu services.<br />
+                        <p>© All rights reserved. Cloud Gallery <br />
+                            You are receiving this email because you signed up for Cloud Gallery services.<br />
                             This is a transactional email which is sent only once hence no need to unsubscribe.</p>
                     </td>
                 </tr>

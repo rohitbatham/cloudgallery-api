@@ -25,7 +25,7 @@ export default function(AppEndpoint, email, newPassword){
                 </tr>
                 <tr>
                     <td valign="top" align="left" style="padding-bottom:18px;padding-left:15px; font-size:32; font-weight:bold;">
-                            <img src="/mailerimages/logoicon.png" style="width: 90px; display: block; margin: 10px auto;" />
+                            <img src="https://cloudgallery.s3.ap-south-1.amazonaws.com/mailerimages/logoicon.png" style="width: 90px; display: block; margin: 10px auto;" />
                     </td>
                 </tr>
             </tbody></table>

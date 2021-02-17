@@ -3,7 +3,6 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import apiRoutes from "./api-routes.js";
-import ReleaseTableJob from "./_schedulers/release-table.js"
 const app = express();
 app.use(cors());
 app.use(bodyParser({limit: '50mb'}));
