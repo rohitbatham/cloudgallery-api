@@ -36,7 +36,7 @@ export async function sendVerifcationMail(host, email, key){
 export async function sendLoginOTP(email, otp, otpType = "login"){
     var mailOptions;
     mailOptions={
-        from: '"Cloudgallery.io" <no-reply@cloudgallery.xyz>',
+        from: '"Cloud Gallery" <no-reply@cloudgallery.xyz>',
         to : email,
         subject : `Login With OTP`,
         html : LoginWithOTP(AppEndpoint, otp)
@@ -58,7 +58,7 @@ export async function sendLoginOTP(email, otp, otpType = "login"){
 export async function sendResetOTP(email, otp){
     var mailOptions;
     mailOptions={
-        from: '"Cloudgallery.io" <no-reply@cloudgallery.xyz>',
+        from: '"Cloud Gallery" <no-reply@cloudgallery.xyz>',
         to : email,
         subject : `Reset Password using OTP`,
         html : ResetPwdWOTP(AppEndpoint, otp)
@@ -79,7 +79,7 @@ export async function sendResetOTP(email, otp){
 export async function sendResetNotification(email, newPassword){
     var mailOptions;
     mailOptions={
-        from: '"Cloudgallery.io" <no-reply@cloudgallery.xyz>',
+        from: '"Cloud Gallery" <no-reply@cloudgallery.xyz>',
         to : email,
         subject : `Password changed successfully`,
         html : ResetNotification(AppEndpoint, email, newPassword)
