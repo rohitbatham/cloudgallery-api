@@ -18,5 +18,3 @@ apiRoutes(app);
 app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
-//Job to release booked table, it checks every minute
-//ReleaseTableJob()

@@ -6,7 +6,9 @@ import ResetPwdWOTP from "../_templates/reset-pwd.js";
 import ResetNotification from "../_templates/reset-notification.js";
 
 let transporter = nodemailer.createTransport({
-    service: "Gmail",
+    host: 'mail.privateemail.com',
+    port: 587,
+    secure: false,
     auth: {
         user: process.env.SMTPEMAIL,
         pass: process.env.SMTPPWD
